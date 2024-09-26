@@ -1,5 +1,5 @@
 <template>
-  <div class="_li" id="u_0_0_eq">
+  <div class="_li" id="app">
     <div id="globalContainer" class="uiContextualLayerParent">
       <div class="fb_content clearfix" id="content" role="main">
         <div>
